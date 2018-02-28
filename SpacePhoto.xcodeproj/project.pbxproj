@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		2F961B68204741B20082B30A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F961B67204741B20082B30A /* AppDelegate.swift */; };
-		2F961B6A204741B20082B30A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F961B69204741B20082B30A /* ViewController.swift */; };
 		2F961B6D204741B20082B30A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F961B6B204741B20082B30A /* Main.storyboard */; };
 		2F961B6F204741B20082B30A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F961B6E204741B20082B30A /* Assets.xcassets */; };
 		2F961B72204741B20082B30A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F961B70204741B20082B30A /* LaunchScreen.storyboard */; };
+		2F961B7A20474E0D0082B30A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2F961B7920474E0D0082B30A /* README.md */; };
+		2F961B7D20474EFE0082B30A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F961B7C20474EFE0082B30A /* MainViewController.swift */; };
+		2F961B80204753450082B30A /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F961B7F204753450082B30A /* PhotoInfo.swift */; };
+		2F961B82204754410082B30A /* PhotoInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F961B81204754410082B30A /* PhotoInfoController.swift */; };
+		2F961B85204754BB0082B30A /* URLHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F961B84204754BB0082B30A /* URLHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F961B64204741B20082B30A /* SpacePhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpacePhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F961B67204741B20082B30A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F961B69204741B20082B30A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F961B6C204741B20082B30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F961B6E204741B20082B30A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F961B71204741B20082B30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F961B73204741B20082B30A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F961B7920474E0D0082B30A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2F961B7C20474EFE0082B30A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2F961B7F204753450082B30A /* PhotoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
+		2F961B81204754410082B30A /* PhotoInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoController.swift; sourceTree = "<group>"; };
+		2F961B84204754BB0082B30A /* URLHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,7 @@
 		2F961B5B204741B20082B30A = {
 			isa = PBXGroup;
 			children = (
+				2F961B7920474E0D0082B30A /* README.md */,
 				2F961B66204741B20082B30A /* SpacePhoto */,
 				2F961B65204741B20082B30A /* Products */,
 			);
@@ -54,14 +63,41 @@
 		2F961B66204741B20082B30A /* SpacePhoto */ = {
 			isa = PBXGroup;
 			children = (
+				2F961B83204754A50082B30A /* Helpers */,
+				2F961B7E2047532E0082B30A /* Model */,
+				2F961B7B20474ED80082B30A /* Controllers */,
 				2F961B67204741B20082B30A /* AppDelegate.swift */,
-				2F961B69204741B20082B30A /* ViewController.swift */,
 				2F961B6B204741B20082B30A /* Main.storyboard */,
 				2F961B6E204741B20082B30A /* Assets.xcassets */,
 				2F961B70204741B20082B30A /* LaunchScreen.storyboard */,
 				2F961B73204741B20082B30A /* Info.plist */,
 			);
 			path = SpacePhoto;
+			sourceTree = "<group>";
+		};
+		2F961B7B20474ED80082B30A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2F961B7C20474EFE0082B30A /* MainViewController.swift */,
+				2F961B81204754410082B30A /* PhotoInfoController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2F961B7E2047532E0082B30A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F961B7F204753450082B30A /* PhotoInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F961B83204754A50082B30A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2F961B84204754BB0082B30A /* URLHelpers.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +161,7 @@
 			files = (
 				2F961B72204741B20082B30A /* LaunchScreen.storyboard in Resources */,
 				2F961B6F204741B20082B30A /* Assets.xcassets in Resources */,
+				2F961B7A20474E0D0082B30A /* README.md in Resources */,
 				2F961B6D204741B20082B30A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,8 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F961B6A204741B20082B30A /* ViewController.swift in Sources */,
+				2F961B80204753450082B30A /* PhotoInfo.swift in Sources */,
 				2F961B68204741B20082B30A /* AppDelegate.swift in Sources */,
+				2F961B85204754BB0082B30A /* URLHelpers.swift in Sources */,
+				2F961B82204754410082B30A /* PhotoInfoController.swift in Sources */,
+				2F961B7D20474EFE0082B30A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
