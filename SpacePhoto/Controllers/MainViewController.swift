@@ -22,6 +22,8 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
+        print("App loaded")
+        
         descriptionLabel.text = ""
         copyrightLabel.text = ""
         
