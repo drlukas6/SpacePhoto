@@ -23,7 +23,7 @@ class MainViewController: UIViewController {
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
         print("App loaded")
-        
+        print("Testing a new branch")
         descriptionLabel.text = ""
         copyrightLabel.text = ""
         
